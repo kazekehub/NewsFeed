@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,18 @@
 		7C5C712224A9E7DD006DD0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C712024A9E7DD006DD0BB /* Main.storyboard */; };
 		7C5C712424A9E7DF006DD0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C712324A9E7DF006DD0BB /* Assets.xcassets */; };
 		7C5C712724A9E7DF006DD0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C712524A9E7DF006DD0BB /* LaunchScreen.storyboard */; };
+		7C5C713324AA05EF006DD0BB /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713224AA05EF006DD0BB /* JGProgressHUD */; };
+		7C5C713624AA0870006DD0BB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713524AA0870006DD0BB /* SDWebImage */; };
+		7C5C713924AA08BF006DD0BB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713824AA08BF006DD0BB /* SwiftSoup */; };
+		7C5C713C24AA0A33006DD0BB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713B24AA0A33006DD0BB /* SideMenu */; };
+		7C5C713F24AA0D78006DD0BB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713E24AA0D78006DD0BB /* RealmSwift */; };
+		7C5C714124AA0D78006DD0BB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C714024AA0D78006DD0BB /* Realm */; };
+		7C5C714524AA1310006DD0BB /* CachedNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C714424AA1310006DD0BB /* CachedNews.swift */; };
+		7C5C714724AA1662006DD0BB /* PieceOfNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C714624AA1662006DD0BB /* PieceOfNews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C5C711724A9E7DD006DD0BB /* NewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5C711724A9E7DD006DD0BB /* News Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5C711A24A9E7DD006DD0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5C711C24A9E7DD006DD0BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C5C711E24A9E7DD006DD0BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		7C5C712324A9E7DF006DD0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5C712624A9E7DF006DD0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C5C712824A9E7DF006DD0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5C714424AA1310006DD0BB /* CachedNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedNews.swift; sourceTree = "<group>"; };
+		7C5C714624AA1662006DD0BB /* PieceOfNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceOfNews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5C714124AA0D78006DD0BB /* Realm in Frameworks */,
+				7C5C713624AA0870006DD0BB /* SDWebImage in Frameworks */,
+				7C5C713324AA05EF006DD0BB /* JGProgressHUD in Frameworks */,
+				7C5C713C24AA0A33006DD0BB /* SideMenu in Frameworks */,
+				7C5C713F24AA0D78006DD0BB /* RealmSwift in Frameworks */,
+				7C5C713924AA08BF006DD0BB /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +64,7 @@
 		7C5C711824A9E7DD006DD0BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C5C711724A9E7DD006DD0BB /* NewsFeed.app */,
+				7C5C711724A9E7DD006DD0BB /* News Feed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +72,41 @@
 		7C5C711924A9E7DD006DD0BB /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				7C5C712E24AA01B6006DD0BB /* Model */,
+				7C5C712F24AA01C1006DD0BB /* View */,
+				7C5C713024AA01DC006DD0BB /* Controller */,
 				7C5C711A24A9E7DD006DD0BB /* AppDelegate.swift */,
 				7C5C711C24A9E7DD006DD0BB /* SceneDelegate.swift */,
 				7C5C711E24A9E7DD006DD0BB /* ViewController.swift */,
-				7C5C712024A9E7DD006DD0BB /* Main.storyboard */,
 				7C5C712324A9E7DF006DD0BB /* Assets.xcassets */,
-				7C5C712524A9E7DF006DD0BB /* LaunchScreen.storyboard */,
 				7C5C712824A9E7DF006DD0BB /* Info.plist */,
 			);
 			path = NewsFeed;
+			sourceTree = "<group>";
+		};
+		7C5C712E24AA01B6006DD0BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C5C714424AA1310006DD0BB /* CachedNews.swift */,
+				7C5C714624AA1662006DD0BB /* PieceOfNews.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C5C712F24AA01C1006DD0BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C5C712024A9E7DD006DD0BB /* Main.storyboard */,
+				7C5C712524A9E7DF006DD0BB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C5C713024AA01DC006DD0BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,8 +125,16 @@
 			dependencies = (
 			);
 			name = NewsFeed;
+			packageProductDependencies = (
+				7C5C713224AA05EF006DD0BB /* JGProgressHUD */,
+				7C5C713524AA0870006DD0BB /* SDWebImage */,
+				7C5C713824AA08BF006DD0BB /* SwiftSoup */,
+				7C5C713B24AA0A33006DD0BB /* SideMenu */,
+				7C5C713E24AA0D78006DD0BB /* RealmSwift */,
+				7C5C714024AA0D78006DD0BB /* Realm */,
+			);
 			productName = NewsFeed;
-			productReference = 7C5C711724A9E7DD006DD0BB /* NewsFeed.app */;
+			productReference = 7C5C711724A9E7DD006DD0BB /* News Feed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +153,7 @@
 				};
 			};
 			buildConfigurationList = 7C5C711224A9E7DD006DD0BB /* Build configuration list for PBXProject "NewsFeed" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -111,6 +161,13 @@
 				Base,
 			);
 			mainGroup = 7C5C710E24A9E7DD006DD0BB;
+			packageReferences = (
+				7C5C713124AA05EF006DD0BB /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				7C5C713424AA0870006DD0BB /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7C5C713724AA08BF006DD0BB /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				7C5C713A24AA0A33006DD0BB /* XCRemoteSwiftPackageReference "SideMenu" */,
+				7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 7C5C711824A9E7DD006DD0BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +198,8 @@
 				7C5C711F24A9E7DD006DD0BB /* ViewController.swift in Sources */,
 				7C5C711B24A9E7DD006DD0BB /* AppDelegate.swift in Sources */,
 				7C5C711D24A9E7DD006DD0BB /* SceneDelegate.swift in Sources */,
+				7C5C714524AA1310006DD0BB /* CachedNews.swift in Sources */,
+				7C5C714724AA1662006DD0BB /* PieceOfNews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Zhapparkulov.NewsFeed;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "News Feed";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Zhapparkulov.NewsFeed;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "News Feed";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +397,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C5C713124AA05EF006DD0BB /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+		7C5C713424AA0870006DD0BB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.2;
+			};
+		};
+		7C5C713724AA08BF006DD0BB /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+		7C5C713A24AA0A33006DD0BB /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.4.8;
+			};
+		};
+		7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C5C713224AA05EF006DD0BB /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5C713124AA05EF006DD0BB /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		7C5C713524AA0870006DD0BB /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5C713424AA0870006DD0BB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		7C5C713824AA08BF006DD0BB /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5C713724AA08BF006DD0BB /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		7C5C713B24AA0A33006DD0BB /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5C713A24AA0A33006DD0BB /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		7C5C713E24AA0D78006DD0BB /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		7C5C714024AA0D78006DD0BB /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C5C710F24A9E7DD006DD0BB /* Project object */;
 }
