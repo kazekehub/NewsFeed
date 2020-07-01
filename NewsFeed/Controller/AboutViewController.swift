@@ -19,13 +19,13 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
     
     @IBAction func emailButton(_ sender: Any) {
-        
+         messageSend(email: "kzhapparkulov@gmail.com")
     }
     
     @IBAction func linkedInButton(_ sender: Any) {
-        
+        guard let url = URL(string: "https://www.linkedin.com/in/kazybek-zhapparkulov/") else { return }
+        UIApplication.shared.open(url)
     }
-    
     
     func messageSend(email: String) {
         if MFMailComposeViewController.canSendMail() {

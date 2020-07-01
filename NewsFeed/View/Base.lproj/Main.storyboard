@@ -385,55 +385,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kazybek" translatesAutoresizingMaskIntoConstraints="NO" id="FVZ-YS-qPd">
-                                <rect key="frame" x="30" y="108" width="90" height="90"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FpJ-1v-coX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aou-fV-Hpo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kazybek Zhapparkulov" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-CM-F5t">
+                                                <rect key="frame" x="140" y="40.5" width="244" height="21"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROg-Ot-ilO">
+                                                <rect key="frame" x="30" y="170" width="47.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LinkedIn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJo-pS-jrs">
+                                                <rect key="frame" x="30" y="249" width="74" height="21"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-ms-6eQ">
+                                                <rect key="frame" x="30" y="280" width="110" height="33"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <state key="normal" title="Zhapparkulov"/>
+                                                <connections>
+                                                    <action selector="linkedInButton:" destination="tdF-no-i7C" eventType="touchUpInside" id="fWe-BH-2WL"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junior iOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmh-sb-fJu">
+                                                <rect key="frame" x="140" y="88.5" width="244" height="21"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kazybek" translatesAutoresizingMaskIntoConstraints="NO" id="FVZ-YS-qPd">
+                                                <rect key="frame" x="30" y="30" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="Sig-e0-eJq"/>
+                                                    <constraint firstAttribute="width" constant="90" id="e27-Xa-ZgL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqW-nm-HOD">
+                                                <rect key="frame" x="30" y="200" width="217" height="33"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                <state key="normal" title="kzhapparkulov@gmail.com"/>
+                                                <connections>
+                                                    <action selector="emailButton:" destination="tdF-no-i7C" eventType="touchUpInside" id="GKG-w3-Oh6"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The application was developed as a team as part of the JumysBar &quot;IOS Development&quot; course" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEM-gJ-Lu9">
+                                                <rect key="frame" x="30" y="343" width="354" height="76"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92992430930000003" green="0.95646518469999997" blue="0.98431807760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="Lmh-sb-fJu" firstAttribute="leading" secondItem="FVZ-YS-qPd" secondAttribute="trailing" constant="20" id="04U-Dw-Pim"/>
+                                            <constraint firstItem="FVZ-YS-qPd" firstAttribute="leading" secondItem="Aou-fV-Hpo" secondAttribute="leading" constant="30" id="2k0-Or-QhV"/>
+                                            <constraint firstItem="ROg-Ot-ilO" firstAttribute="leading" secondItem="Aou-fV-Hpo" secondAttribute="leading" constant="30" id="3nv-an-Gxp"/>
+                                            <constraint firstItem="WJo-pS-jrs" firstAttribute="leading" secondItem="ROg-Ot-ilO" secondAttribute="leading" id="8E6-yn-6iR"/>
+                                            <constraint firstItem="mEM-gJ-Lu9" firstAttribute="top" secondItem="Vz3-ms-6eQ" secondAttribute="bottom" constant="30" id="8SD-6o-Gbw"/>
+                                            <constraint firstItem="Vz3-ms-6eQ" firstAttribute="leading" secondItem="ROg-Ot-ilO" secondAttribute="leading" id="9LI-6y-DP0"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mEM-gJ-Lu9" secondAttribute="bottom" constant="10" id="Dpv-A6-duJ"/>
+                                            <constraint firstItem="ROg-Ot-ilO" firstAttribute="top" secondItem="FVZ-YS-qPd" secondAttribute="bottom" constant="50" id="QcK-yk-Inh"/>
+                                            <constraint firstItem="FqW-nm-HOD" firstAttribute="top" secondItem="ROg-Ot-ilO" secondAttribute="bottom" constant="10" id="Sul-an-EvN"/>
+                                            <constraint firstItem="Lmh-sb-fJu" firstAttribute="centerY" secondItem="FVZ-YS-qPd" secondAttribute="centerY" constant="24" id="W9W-i6-GHq"/>
+                                            <constraint firstAttribute="trailing" secondItem="mEM-gJ-Lu9" secondAttribute="trailing" constant="30" id="WPB-mH-gRY"/>
+                                            <constraint firstItem="mEM-gJ-Lu9" firstAttribute="leading" secondItem="Aou-fV-Hpo" secondAttribute="leading" constant="30" id="Wcj-Dc-8Fw"/>
+                                            <constraint firstItem="FVZ-YS-qPd" firstAttribute="top" secondItem="Aou-fV-Hpo" secondAttribute="top" constant="30" id="XjQ-yr-Yyn"/>
+                                            <constraint firstItem="G2i-CM-F5t" firstAttribute="centerY" secondItem="FVZ-YS-qPd" secondAttribute="centerY" constant="-24" id="bm2-ZB-Jjo"/>
+                                            <constraint firstItem="WJo-pS-jrs" firstAttribute="top" secondItem="FqW-nm-HOD" secondAttribute="bottom" constant="16" id="dIL-5y-m4o"/>
+                                            <constraint firstItem="Vz3-ms-6eQ" firstAttribute="top" secondItem="WJo-pS-jrs" secondAttribute="bottom" constant="10" id="jHJ-Ll-K0D"/>
+                                            <constraint firstItem="FqW-nm-HOD" firstAttribute="leading" secondItem="ROg-Ot-ilO" secondAttribute="leading" id="pcT-aU-njP"/>
+                                            <constraint firstItem="G2i-CM-F5t" firstAttribute="leading" secondItem="FVZ-YS-qPd" secondAttribute="trailing" constant="20" id="rbG-HZ-nbr"/>
+                                            <constraint firstAttribute="trailing" secondItem="G2i-CM-F5t" secondAttribute="trailing" constant="30" id="wIP-xt-wNl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lmh-sb-fJu" secondAttribute="trailing" constant="30" id="y9E-Su-oop"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Sig-e0-eJq"/>
-                                    <constraint firstAttribute="width" constant="90" id="e27-Xa-ZgL"/>
+                                    <constraint firstItem="Aou-fV-Hpo" firstAttribute="width" secondItem="FpJ-1v-coX" secondAttribute="width" id="1iv-0y-xCO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Aou-fV-Hpo" secondAttribute="bottom" id="5Og-cn-xi4"/>
+                                    <constraint firstItem="Aou-fV-Hpo" firstAttribute="leading" secondItem="FpJ-1v-coX" secondAttribute="leading" id="B82-0z-ocY"/>
+                                    <constraint firstItem="Aou-fV-Hpo" firstAttribute="top" secondItem="FpJ-1v-coX" secondAttribute="top" id="KkQ-Ta-abn"/>
+                                    <constraint firstItem="Aou-fV-Hpo" firstAttribute="height" secondItem="FpJ-1v-coX" secondAttribute="height" priority="250" id="tYt-SI-65q"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aou-fV-Hpo" secondAttribute="trailing" id="tjx-eh-N01"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXH-eb-gdH">
-                                <rect key="frame" x="166" y="475" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqW-nm-HOD">
-                                <rect key="frame" x="140" y="136.5" width="46" height="33"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                <state key="normal" title="Email"/>
-                                <connections>
-                                    <action selector="emailButton:" destination="tdF-no-i7C" eventType="touchUpInside" id="GKG-w3-Oh6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kazybek Zhapparkulov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-CM-F5t">
-                                <rect key="frame" x="140" y="108" width="183.5" height="24.5"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-ms-6eQ">
-                                <rect key="frame" x="140" y="173.5" width="69" height="24.5"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                <state key="normal" title="LinkedIn"/>
-                                <connections>
-                                    <action selector="linkedInButton:" destination="tdF-no-i7C" eventType="touchUpInside" id="fWe-BH-2WL"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.92992430930000003" green="0.95646518469999997" blue="0.98431807760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="FqW-nm-HOD" firstAttribute="centerY" secondItem="FVZ-YS-qPd" secondAttribute="centerY" id="3J2-A4-Ttw"/>
-                            <constraint firstItem="Vz3-ms-6eQ" firstAttribute="bottom" secondItem="FVZ-YS-qPd" secondAttribute="bottom" id="ATe-9h-JnP"/>
-                            <constraint firstItem="G2i-CM-F5t" firstAttribute="leading" secondItem="FVZ-YS-qPd" secondAttribute="trailing" constant="20" id="Byx-w4-EdI"/>
-                            <constraint firstItem="Vz3-ms-6eQ" firstAttribute="leading" secondItem="G2i-CM-F5t" secondAttribute="leading" id="NsZ-Rz-0Vc"/>
-                            <constraint firstItem="G2i-CM-F5t" firstAttribute="top" secondItem="FVZ-YS-qPd" secondAttribute="top" id="QUb-xM-BfU"/>
-                            <constraint firstItem="Vz3-ms-6eQ" firstAttribute="top" secondItem="FqW-nm-HOD" secondAttribute="bottom" constant="4" id="Zj8-Mp-2e4"/>
-                            <constraint firstItem="FqW-nm-HOD" firstAttribute="leading" secondItem="G2i-CM-F5t" secondAttribute="leading" id="uMR-rx-9LT"/>
-                            <constraint firstItem="FqW-nm-HOD" firstAttribute="top" secondItem="G2i-CM-F5t" secondAttribute="bottom" constant="4" id="xe1-eo-NH3"/>
-                            <constraint firstItem="FVZ-YS-qPd" firstAttribute="leading" secondItem="Wpc-d6-BzX" secondAttribute="leading" constant="30" id="zQj-s9-HH9"/>
-                            <constraint firstItem="FVZ-YS-qPd" firstAttribute="top" secondItem="Wpc-d6-BzX" secondAttribute="top" constant="20" id="zSH-Wo-HQi"/>
+                            <constraint firstItem="Wpc-d6-BzX" firstAttribute="bottom" secondItem="FpJ-1v-coX" secondAttribute="bottom" id="5xX-Wb-bjM"/>
+                            <constraint firstItem="Wpc-d6-BzX" firstAttribute="trailing" secondItem="FpJ-1v-coX" secondAttribute="trailing" id="dOT-hG-3oz"/>
+                            <constraint firstItem="FpJ-1v-coX" firstAttribute="top" secondItem="Wpc-d6-BzX" secondAttribute="top" id="ry1-Ks-rBQ"/>
+                            <constraint firstItem="FpJ-1v-coX" firstAttribute="leading" secondItem="Wpc-d6-BzX" secondAttribute="leading" id="va5-sx-HBK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wpc-d6-BzX"/>
                     </view>
@@ -467,7 +519,7 @@
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="searchTextFieldClick:" destination="MxP-ir-OD5" eventType="editingDidEnd" id="Ygp-Bb-Ef7"/>
+                                    <action selector="searchTextFieldClick:" destination="MxP-ir-OD5" eventType="editingChanged" id="0N8-QH-rFZ"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heW-7W-zBp">

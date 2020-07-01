@@ -36,7 +36,7 @@ class SideBarController: UITableViewController {
                                 ("Music", "everything?q=music", "music")]),
         Objects(sectionName: "Pages",
                 sectionObjects: [("Saved News", nil, "book-mark"),
-                                ("About Us", nil, "info-circle")])]
+                                ("About", nil, "info-circle")])]
     
     var delegate: SideBarDelegate?
     let urlSkeleton = "https://newsapi.org/v2/"

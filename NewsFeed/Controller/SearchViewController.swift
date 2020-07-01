@@ -50,7 +50,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     @IBAction func searchTextFieldClick(_ sender: Any) {
         isTextFieldClicked = true
         let realm = try! Realm()
-        let searchingString = "*" + (searchTextField?.text ?? "") + "*"
+        let searchingString = "*"+(searchTextField?.text ?? "")+"*"
         articles = Array(realm.objects(CachedNews.self).filter("title like [c]%@ or content like [c]%@", searchingString, searchingString))
         searchImageBackground.alpha = 0.0
         recentSearchLbl.alpha = 0.0
