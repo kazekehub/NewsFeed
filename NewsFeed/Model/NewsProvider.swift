@@ -17,7 +17,7 @@ class NewsProvider {
 
     var delegate: NewsProviderDelegate?
     var selectedCategory = "top-headlines?sources=the-next-web"
-    let apiKey = "apiKey=d6fb5fe5c69a427a81a7bcb31072a359"
+    let apiKey = "apiKey=a46f989eadb3458493488519f1bc566e"
     
     func fetchArticles(baseURL: String = "https://newsapi.org/v2/") {
         guard let url = URL(string: "\(baseURL)\(selectedCategory)&\(apiKey)") else {print("Fail instance of url.");return}
