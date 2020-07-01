@@ -15,8 +15,6 @@
 		7C5C713324AA05EF006DD0BB /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713224AA05EF006DD0BB /* JGProgressHUD */; };
 		7C5C713924AA08BF006DD0BB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713824AA08BF006DD0BB /* SwiftSoup */; };
 		7C5C713C24AA0A33006DD0BB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713B24AA0A33006DD0BB /* SideMenu */; };
-		7C5C713F24AA0D78006DD0BB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C713E24AA0D78006DD0BB /* RealmSwift */; };
-		7C5C714124AA0D78006DD0BB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5C714024AA0D78006DD0BB /* Realm */; };
 		7C5C714524AA1310006DD0BB /* CachedNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C714424AA1310006DD0BB /* CachedNews.swift */; };
 		7C5C714724AA1662006DD0BB /* PieceOfNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C714624AA1662006DD0BB /* PieceOfNews.swift */; };
 		7C5C714924AA1721006DD0BB /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C714824AA1721006DD0BB /* NewsTableViewController.swift */; };
@@ -32,9 +30,11 @@
 		7C5C715E24AA2049006DD0BB /* NewsSavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C715D24AA2049006DD0BB /* NewsSavedTableViewCell.swift */; };
 		7C5C716024AA2064006DD0BB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C715F24AA2064006DD0BB /* SearchTableViewCell.swift */; };
 		7C5C716224ACA438006DD0BB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C716124ACA438006DD0BB /* AboutViewController.swift */; };
+		AF829A27B36DA8E11DA74433 /* Pods_NewsFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EEA7A48D79BC93A6E28BF7 /* Pods_NewsFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67EEA7A48D79BC93A6E28BF7 /* Pods_NewsFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5C711724A9E7DD006DD0BB /* News Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5C711A24A9E7DD006DD0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5C711C24A9E7DD006DD0BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		7C5C715D24AA2049006DD0BB /* NewsSavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSavedTableViewCell.swift; sourceTree = "<group>"; };
 		7C5C715F24AA2064006DD0BB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		7C5C716124ACA438006DD0BB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E42E8CC5A70FB401F3FF9450 /* Pods-NewsFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeed.debug.xcconfig"; path = "Target Support Files/Pods-NewsFeed/Pods-NewsFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		E91547E4096F24356EA63D13 /* Pods-NewsFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeed.release.xcconfig"; path = "Target Support Files/Pods-NewsFeed/Pods-NewsFeed.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,23 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5C714124AA0D78006DD0BB /* Realm in Frameworks */,
 				7C5C713324AA05EF006DD0BB /* JGProgressHUD in Frameworks */,
 				7C5C713C24AA0A33006DD0BB /* SideMenu in Frameworks */,
 				7C5C714C24AA18BC006DD0BB /* SDWebImageSVGCoder in Frameworks */,
-				7C5C713F24AA0D78006DD0BB /* RealmSwift in Frameworks */,
 				7C5C713924AA08BF006DD0BB /* SwiftSoup in Frameworks */,
+				AF829A27B36DA8E11DA74433 /* Pods_NewsFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40B7082CF052946FF15BBD5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67EEA7A48D79BC93A6E28BF7 /* Pods_NewsFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C5C710E24A9E7DD006DD0BB = {
 			isa = PBXGroup;
 			children = (
 				7C5C711924A9E7DD006DD0BB /* NewsFeed */,
 				7C5C711824A9E7DD006DD0BB /* Products */,
+				D41D3EF026E3E9E35AA0920B /* Pods */,
+				40B7082CF052946FF15BBD5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +153,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		D41D3EF026E3E9E35AA0920B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E42E8CC5A70FB401F3FF9450 /* Pods-NewsFeed.debug.xcconfig */,
+				E91547E4096F24356EA63D13 /* Pods-NewsFeed.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5C712B24A9E7DF006DD0BB /* Build configuration list for PBXNativeTarget "NewsFeed" */;
 			buildPhases = (
+				65F7060FDDC4C855A89FEAA2 /* [CP] Check Pods Manifest.lock */,
 				7C5C711324A9E7DD006DD0BB /* Sources */,
 				7C5C711424A9E7DD006DD0BB /* Frameworks */,
 				7C5C711524A9E7DD006DD0BB /* Resources */,
+				A18DEE872073CA2B15F898DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,8 +184,6 @@
 				7C5C713224AA05EF006DD0BB /* JGProgressHUD */,
 				7C5C713824AA08BF006DD0BB /* SwiftSoup */,
 				7C5C713B24AA0A33006DD0BB /* SideMenu */,
-				7C5C713E24AA0D78006DD0BB /* RealmSwift */,
-				7C5C714024AA0D78006DD0BB /* Realm */,
 				7C5C714B24AA18BC006DD0BB /* SDWebImageSVGCoder */,
 			);
 			productName = NewsFeed;
@@ -186,7 +206,7 @@
 				};
 			};
 			buildConfigurationList = 7C5C711224A9E7DD006DD0BB /* Build configuration list for PBXProject "NewsFeed" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -198,7 +218,6 @@
 				7C5C713124AA05EF006DD0BB /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 				7C5C713724AA08BF006DD0BB /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				7C5C713A24AA0A33006DD0BB /* XCRemoteSwiftPackageReference "SideMenu" */,
-				7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				7C5C714A24AA18BC006DD0BB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
 			);
 			productRefGroup = 7C5C711824A9E7DD006DD0BB /* Products */;
@@ -222,6 +241,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F7060FDDC4C855A89FEAA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A18DEE872073CA2B15F898DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsFeed/Pods-NewsFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsFeed/Pods-NewsFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsFeed/Pods-NewsFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C5C711324A9E7DD006DD0BB /* Sources */ = {
@@ -319,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -373,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -385,11 +446,13 @@
 		};
 		7C5C712C24A9E7DF006DD0BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42E8CC5A70FB401F3FF9450 /* Pods-NewsFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K554A9BGV;
 				INFOPLIST_FILE = NewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,11 +466,13 @@
 		};
 		7C5C712D24A9E7DF006DD0BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91547E4096F24356EA63D13 /* Pods-NewsFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K554A9BGV;
 				INFOPLIST_FILE = NewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,14 +532,6 @@
 				minimumVersion = 6.4.8;
 			};
 		};
-		7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.0;
-			};
-		};
 		7C5C714A24AA18BC006DD0BB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder.git";
@@ -500,16 +557,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7C5C713A24AA0A33006DD0BB /* XCRemoteSwiftPackageReference "SideMenu" */;
 			productName = SideMenu;
-		};
-		7C5C713E24AA0D78006DD0BB /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
-		};
-		7C5C714024AA0D78006DD0BB /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7C5C713D24AA0D78006DD0BB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = Realm;
 		};
 		7C5C714B24AA18BC006DD0BB /* SDWebImageSVGCoder */ = {
 			isa = XCSwiftPackageProductDependency;
