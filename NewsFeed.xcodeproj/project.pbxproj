@@ -35,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		67EEA7A48D79BC93A6E28BF7 /* Pods_NewsFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C57F20224B0C1490024A82B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7C5C711724A9E7DD006DD0BB /* News Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5C711A24A9E7DD006DD0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5C711C24A9E7DD006DD0BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		7C5C710E24A9E7DD006DD0BB = {
 			isa = PBXGroup;
 			children = (
+				7C57F20224B0C1490024A82B /* README.md */,
 				7C5C711924A9E7DD006DD0BB /* NewsFeed */,
 				7C5C711824A9E7DD006DD0BB /* Products */,
 				D41D3EF026E3E9E35AA0920B /* Pods */,
