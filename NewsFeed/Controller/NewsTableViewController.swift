@@ -33,6 +33,10 @@ class NewsTableViewController: UITableViewController, NewsProviderDelegate, Side
         SideMenuManager.default.leftMenuNavigationController = sideBarMenu
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: self.view, forMenu: SideMenuManager.PresentDirection.left)
         
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl!.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(self.refreshControl!)
+        
         articles = Array(realm.objects(CachedNews.self).filter("categoryName == 'popular'").sorted(byKeyPath: "publishedAt", ascending: false))
         
         tableView.tableFooterView = UIView()
@@ -61,6 +65,10 @@ class NewsTableViewController: UITableViewController, NewsProviderDelegate, Side
         } catch {
             fatalError()
         }
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        newsProvider.fetchArticles()
     }
     
     func runSegue(identifier: String) {

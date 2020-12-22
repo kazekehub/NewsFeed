@@ -531,7 +531,7 @@
 			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.4.8;
+				minimumVersion = 6.4.9;
 			};
 		};
 		7C5C714A24AA18BC006DD0BB /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
